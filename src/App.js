@@ -26,7 +26,7 @@ function App() {
 
       if(consultar){
         const appId = '31aec1148346aaefb4ec16f8a9d61ea0'
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${cidade},${pais}&appid=${appId}`      
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade},${pais}&appid=${appId}`      
         const resposta = await fetch(url) // esperar retorno da URL
         const resultado = await resposta.json() // esperar a resposta vir de um retorno em JSON
 
